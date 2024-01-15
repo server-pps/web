@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>••• Polski Party Server ••• Najstarszy istniejący polski serwer SA:MP</title>
+    <meta name="description" content="Polski Party Server [PPS] to polski serwer SA:MP, który istnieje nieprzerywanie od 2006 roku.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#222222">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Epilogue&display=swap">
+</head>
+<body>
+    <div class="index-out">
+        <div class="w3-center index-in">
+            <div class="header">
+                <h1 class="w3-xxxlarge">POLSKI PARTY SERVER</h1>
+                <hr style="width:50%;margin-left: auto;margin-right: auto;" />
+                <h3><i class="fas fa-gamepad"></i> <span class="w3-hide-small">IP: </span><a href="samp://graj.server-pps.com">graj.server-pps.com</a></h3>
+                <h3><i class="fab fa-discord"></i> <span class="w3-hide-small">DISCORD: </span><a href="https://discord.gg/8W5FgKTtsK">discord.gg/8W5FgKTtsK</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="w3-padding-64 w3-content w3-padding">
+        <h2 class="w3-center w3-xxlarge">Historia PPS</h2>
+        <p>PolskiPartyServer [PPS] to serwer istniejący od początków SAMPa, założony został przez ImpeRa w 2006 roku na wersji 0.1a na prośbę jego bratanicy Mi$i.</p>
+        <p>Serwer od początku cieszył się bardzo dużą popularnością, szczególnie w latach 2011 - 2014 kiedy był największym serwerem typu DeathMatch/Freeroam w Polsce. Liczba graczy wtedy oscylowała w granicach 100 - 150, a rekord został pobity 1 marca 2013 roku około godziny 19:00, kiedy na evencie z okazji 7 urodzin serwera na raz bawiło się równo 500 graczy. Rekord zapisał się na pewno nie tylko w historii SAMPa, ale i rozgrywki multiplayerowej w Polsce, bo mało który nieoficjalny serwer do gry mógł się w 2013 roku pochwalić takim rekordem.</p>
+        <p>Serwer już od <span id="age">00</span> lat, zrzesza zgraną i pomocną społeczność, właśnie to sprawia że istnieje on do dziś. Pod koniec roku 2019 serwer został teoretycznie zamknięty, jednak przywiązanie graczy i administracji ostatecznie nie pozwoliło go zamknąć, w związku z czym pozostał on włączony. Liczba graczy na serwerze jest na obecny stan SAMPa wysoka, więc został on "reaktywowany" w październiku 2020.</p>
+        <p>Skrypt naszego serwera jest do dziś regularnie aktualizowany, oraz organizowane są na nim różne eventy, więcej informacji znaleźć można na naszym Discordzie, do którego link znajduje się powyżej.</p>
+    </div>
+    <!-- <div class="footer w3-padding-32"></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b883e45979.js"></script>
+    <script>
+        //RANDOM BACKGROUND
+        const id = Math.floor(Math.random() * 28) + 1; 
+        $('.index-in').attr('style', `--bg-img: url('images/bg${id}.jpeg')`);
+
+        //DATE DIFF
+        const bday = new Date('March, 1, 2006');
+        const ms = Date.now() - bday;
+        const date = new Date(ms);
+        const age = Math.abs(date.getUTCFullYear() - 1970);
+        $('#age').html(age);
+    </script>
+</body>
